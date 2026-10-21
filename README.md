@@ -5,14 +5,10 @@
 源代码在 https://github.com/gianlucaborello/libprocesshider ，这里是我优化版本
 
 
-
-
-libprocesshider
-===============
-
-Hide a process under Linux using the ld preloader.
+libprocesshider: Hide a process under Linux using the ld preloader.
 
 Full tutorial available at [https://www.sysdig.com/blog/hiding-linux-processes-for-fun-and-profit](https://www.sysdig.com/blog/hiding-linux-processes-for-fun-and-profit).
+
 
 
 # Step1
