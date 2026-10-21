@@ -1,6 +1,9 @@
 #!/usr/bin/python
+import sys
 import time
 
-for i in range( 1 , 1000 ):
-  time.sleep(5)
+number =  sys.argv[1]
+
+for i in range( 1 , int(  number )  ):
+  time.sleep(2)
   print(i)
