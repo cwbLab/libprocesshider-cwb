@@ -61,7 +61,9 @@ COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
 
 
 # 总结
+
 （1）总的来说，确实有用。在执行上述操作后，已有的进程不被影响，不会隐藏。在上述操作后，新建的进程，则会被隐藏。
+
 （2）第三步，最好是用修改 /etc/ld.so.preload 的方式，将在所有的终端中生效。
 
 
