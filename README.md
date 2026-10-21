@@ -23,6 +23,7 @@ Full tutorial available at [https://www.sysdig.com/blog/hiding-linux-processes-f
 
 （2）process_to_filter变量的内容为 test.py 时，不能隐藏
 
+
 # 第二步
 In short, compile the library:
 
@@ -31,6 +32,7 @@ gianluca@sid:~/libprocesshider$ make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 gianluca@sid:~/libprocesshider$ sudo mv libprocesshider.so /usr/local/lib/
 ```
+
 
 # 第三步
 Load it with the global dynamic linker
@@ -42,10 +44,12 @@ root@sid:~# echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
 这一步可以用 export LD_PRELOAD=/usr/local/lib/libprocesshider.so 来代替，但export的方式仅在该终端中有用，其它终端无效。
 
+
+# 第四步。看效果
+
 And your process will be off the radar 
 
 ```
-# 第四步。看效果
 gianluca@sid:~$ sudo ps aux
 USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
 ...
@@ -54,6 +58,7 @@ gianluca@sid:~$ sudo lsof -ni
 COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
 ...
 ```
+
 
 # 总结
 （1）总的来说，确实有用。在执行上述操作后，已有的进程不被影响，不会隐藏。在上述操作后，新建的进程，则会被隐藏。
