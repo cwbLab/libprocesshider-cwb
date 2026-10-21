@@ -16,8 +16,11 @@ Full tutorial available at [https://www.sysdig.com/blog/hiding-linux-processes-f
 
 # 第一步
 首先编辑processhider.c文件，修改process_to_filter变量的内容，所有具有此名称的进程都将被隐藏。所以，必须提供命令中的字符。
+
 比如 对于 /usr/bin/python3 test.py 1000 进程：
+
 （1）process_to_filter变量的内容为 python3 时，能实现隐藏。为 python 时 ，不能隐藏。
+
 （2）process_to_filter变量的内容为 test.py 时，不能隐藏
 
 # 第二步
