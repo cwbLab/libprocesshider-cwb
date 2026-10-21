@@ -1,7 +1,6 @@
 # Introducrion
 
-一款用于linux下隐藏进程的工具
-=============================
+一款用于linux下隐藏进程的工具。
 
 源代码在 https://github.com/gianlucaborello/libprocesshider ，这里是我优化版本
 
@@ -13,7 +12,7 @@ libprocesshider
 
 Hide a process under Linux using the ld preloader.
 
-Full tutorial available at [https://www.sysdig.com/blog/hiding-linux-processes-for-fun-and-profit](https://www.sysdig.com/blog/hiding-linux-processes-for-fun-and-profit)
+Full tutorial available at [https://www.sysdig.com/blog/hiding-linux-processes-for-fun-and-profit](https://www.sysdig.com/blog/hiding-linux-processes-for-fun-and-profit).
 
 
 # Step1
